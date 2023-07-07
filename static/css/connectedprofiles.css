@@ -23,9 +23,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-
   z-index: 3;
 }
 
@@ -41,7 +38,6 @@ body {
   width: 70%;
 }
 .sidebar > .logo > .div-right {
-  /* width: 30%; */
   width: 2rem;
   height: 2rem;
   border-radius: 0.625rem;
@@ -66,6 +62,8 @@ body {
   background: #fff;
 
   padding: 3%;
+
+  width: 100%;
 }
 
 .sidebar .brand-item-dropdown .dropdown-menu .dropdown-item {
@@ -90,6 +88,8 @@ body {
   text-transform: capitalize;
 
   border-bottom: none !important;
+
+  padding: 5%;
 }
 
 .sidebar .setting-item-dropdown .dropdown-menu {
@@ -98,6 +98,8 @@ body {
   background: #fff;
 
   padding: 3%;
+
+  width: 100%;
 }
 
 .sidebar .setting-item-dropdown .dropdown-menu .dropdown-item {
@@ -235,6 +237,8 @@ body {
 .main-panel .topbar {
   padding: 1% 1% 0% 1%;
   height: 9%;
+  position: relative;
+  z-index: 1;
 }
 
 .main-panel .topbar > .main-head {
@@ -315,8 +319,97 @@ body {
   text-transform: capitalize;
 }
 
-.main-panel .main-head .right-side .dropdown-menu {
-  z-index: 2000;
+.main-panel .main-head .right-side .profile-item-dropdown .dropdown-menu {
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  background: #fff;
+
+  width: 100%;
+  margin-top: 5% !important;
+
+  padding: 2%;
+}
+
+.main-panel
+  .main-head
+  .right-side
+  .profile-item-dropdown
+  .dropdown-menu
+  .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 4%;
+
+  border-bottom: 1px solid #621dec52;
+}
+
+.main-panel
+  .main-head
+  .right-side
+  .profile-item-dropdown
+  .dropdown-menu
+  .dropdown-item
+  .icon {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 3.75rem;
+
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(151, 137, 178, 0.2));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-panel
+  .main-head
+  .right-side
+  .profile-item-dropdown
+  .dropdown-menu
+  .dropdown-item
+  .icon
+  img {
+  width: 1.25rem;
+  height: 0.875rem;
+}
+
+.main-panel
+  .main-head
+  .right-side
+  .profile-item-dropdown
+  .dropdown-menu
+  .dropdown-item
+  > .text
+  > span {
+  color: #150337;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-panel
+  .main-head
+  .right-side
+  .profile-item-dropdown
+  .dropdown-menu
+  .new-dropdown-item {
+  color: #601aec;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+
+  border-bottom: none !important;
+
+  padding: 5%;
 }
 
 .main-panel .main-content .profile-card {
@@ -326,6 +419,7 @@ body {
   backdrop-filter: blur(10px);
   padding: 2% 2% 1% 2%;
   margin-bottom: 1rem;
+  z-index: 0;
 }
 
 .main-panel .main-content .profile-card:hover {
@@ -552,18 +646,13 @@ body {
 
   .sidebar-open {
     display: flex;
-    transition: width 2s;
+    transform: translateZ(0);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
 
   .main-panel {
     width: 100%;
     z-index: 0;
-  }
-}
-
-@media (max-width: 350px) {
-  .sidebar {
-    width: 60%;
   }
 }
 
@@ -580,5 +669,11 @@ body {
 
   .main-panel .main-content .profile-card > .section > .second-half {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .sidebar {
+    width: 60%;
   }
 }

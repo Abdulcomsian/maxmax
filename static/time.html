@@ -23,6 +23,8 @@
   </head>
   <body>
     <div>
+      <!-- Overlay -->
+      <div class="overlay"></div>
       <!-- Sidebar -->
       <div class="sidebar">
         <div class="logo">
@@ -65,13 +67,11 @@
             </div>
           </div>
 
-          <ul class="dropdown-menu dropdown-menu-lg-end w-100">
+          <ul class="dropdown-menu dropdown-menu-lg-end">
             <li><a class="dropdown-item" href="#">Menu item</a></li>
             <li><a class="dropdown-item" href="#">Menu item</a></li>
             <li>
-              <a class="new-dropdown-item dropdown-item" href="#"
-                >+Add New Brand</a
-              >
+              <a class="new-dropdown-item" href="#">+Add New Brand</a>
             </li>
           </ul>
         </div>
@@ -219,7 +219,7 @@
               <img src="../static/images/Arrow-2.png" alt="" />
             </div>
           </div>
-          <ul class="dropdown-menu w-100">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Menu item</a></li>
             <li><a class="dropdown-item border-0" href="#">Menu item</a></li>
           </ul>
@@ -232,26 +232,67 @@
         <div class="topbar">
           <div class="main-head">
             <div class="left-side">
-              <span> Connect Profile </span>
+              <span> </span>
             </div>
             <div class="right-side">
-              <div
-                class="dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <!-- <img src="../static/images/logos_youtube-icon.png" alt="" /> -->
-                <div class="icon">
-                  <img src="../static/images/logos_youtube-icon.png" alt="" />
-                </div>
-                <span class="text">Profile Username</span>
-                <img src="../static/images/Arrow-2.png" alt="" />
+              <div id="test-button" class="test-btn">
+                <button>Test</button>
               </div>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-              </ul>
+              <div class="btn-group profile-item-dropdown">
+                <div
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="icon">
+                    <img src="../static/images/logos_youtube-icon.png" alt="" />
+                  </div>
+                  <span class="text">Profile Username</span>
+                  <img src="../static/images/Arrow-2.png" alt="" />
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon">
+                        <img
+                          src="../static/images/logos_youtube-icon.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text">
+                        <span class="text">Profile Username</span>
+                      </div>
+                    </a>
+                  </li>
+                  <a class="dropdown-item" href="#">
+                    <div class="icon">
+                      <img
+                        src="../static/images/logos_youtube-icon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text">
+                      <span class="text">Profile Username</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <div class="icon">
+                      <img
+                        src="../static/images/logos_youtube-icon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text">
+                      <span class="text">Profile Username</span>
+                    </div>
+                  </a>
+                  <li>
+                    <a class="new-dropdown-item border-0" href="#"
+                      >+Add New Profile</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -264,6 +305,25 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const sidebar = document.querySelector(".sidebar");
+        const overlay = document.querySelector(".overlay");
+        const sidebarToggle = document.querySelector(".div-right");
+        const testButton = document.querySelector("#test-button");
+
+        sidebar.classList.remove("sidebar-open"); // Remove the sidebar-open class by default
+
+        testButton.addEventListener("click", function () {
+          sidebar.classList.add("sidebar-open");
+          overlay.classList.add("overlay-visible");
+        });
+
+        sidebarToggle.addEventListener("click", function () {
+          sidebar.classList.remove("sidebar-open");
+          overlay.classList.remove("overlay-visible");
+        });
+      });
+
       var submenu = document.getElementById("submenu2");
       submenu.style.display = "block";
       var test = document.getElementById("report-caret");
