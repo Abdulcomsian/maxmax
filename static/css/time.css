@@ -275,6 +275,7 @@ body {
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
+  padding-bottom: 1%;
 }
 
 .main-panel .main-head .right-side {
@@ -418,10 +419,16 @@ body {
   padding: 5%;
 }
 
+.main-panel .main-content .content {
+  overflow: scroll;
+  height: 100%;
+}
+
 .main-panel .main-content .filter-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0% 3%;
 }
 
 .main-panel .main-content .filter-div .first-half {

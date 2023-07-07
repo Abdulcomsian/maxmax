@@ -275,6 +275,7 @@ body {
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
+  padding-bottom: 1%;
 }
 
 .main-panel .main-head .right-side {
@@ -416,6 +417,11 @@ body {
   border-bottom: none !important;
 
   padding: 5%;
+}
+
+.main-panel .main-content .content {
+  overflow: scroll;
+  height: 100%;
 }
 
 .main-panel .main-content .profile-card {
