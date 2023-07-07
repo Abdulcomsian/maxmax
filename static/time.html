@@ -13,12 +13,18 @@
 
     <title>Time</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
   <body>
@@ -236,7 +242,9 @@
             </div>
             <div class="right-side">
               <div id="test-button" class="test-btn">
-                <button>Test</button>
+                <button id="test-button" type="button" class="btn btn-light">
+                  <i class="bi bi-list"></i>
+                </button>
               </div>
               <div class="btn-group profile-item-dropdown">
                 <div
@@ -287,9 +295,9 @@
                     </div>
                   </a>
                   <li>
-                    <a class="new-dropdown-item border-0" href="#"
-                      >+Add New Profile</a
-                    >
+                    <a class="new-dropdown-item border-0" href="#">
+                      +Add New Profile
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -339,6 +347,9 @@
                 </form>
               </div>
             </div>
+            <div class="card graph-card">
+              <canvas id="curveChart" width="400" height="200"></canvas>
+            </div>
           </div>
         </div>
       </div>
@@ -363,6 +374,45 @@
           sidebar.classList.remove("sidebar-open");
           overlay.classList.remove("overlay-visible");
         });
+      });
+
+      // Sample data
+      var data = {
+        labels: ["T0", "T5", "T10", "T20", "T25", "T30"],
+        datasets: [
+          {
+            label: "Example Dataset",
+            data: [3.5, 2.5, 5.3, 3.9],
+            fill: false,
+            borderColor: "rgba(212, 88, 255, 1)",
+            tension: 0.4, // Increased tension for a more curved line
+          },
+          {
+            label: "Example Dataset",
+            data: [1.8, 0.7, 2.9, 5.1, 3.4],
+            fill: false,
+            borderColor: "rgba(94, 23, 235, 1)",
+            tension: 0.4, // Increased tension for a more curved line
+          },
+        ],
+      };
+
+      // Configuration options
+      var options = {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      };
+
+      // Create the chart
+      var ctx = document.getElementById("curveChart").getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "line",
+        data: data,
+        options: options,
       });
 
       var submenu = document.getElementById("submenu2");

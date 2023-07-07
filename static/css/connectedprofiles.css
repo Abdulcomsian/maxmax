@@ -37,6 +37,7 @@ body {
 .sidebar > .logo > .div-left {
   width: 70%;
 }
+
 .sidebar > .logo > .div-right {
   width: 2rem;
   height: 2rem;
@@ -45,6 +46,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: inherit;
+  display: none;
 }
 
 .sidebar .brand-item {
@@ -279,6 +281,10 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.main-panel .main-head .right-side > button {
+  display: none;
 }
 
 .main-panel .main-head .right-side .dropdown-toggle {
@@ -638,6 +644,14 @@ body {
     display: none;
     z-index: 2;
     box-shadow: 3px 0 20px 0 rgba(0, 0, 0, 0.51);
+  }
+
+  .sidebar > .logo > .div-right {
+    display: block;
+  }
+
+  .main-panel .main-head .right-side > button {
+    display: block;
   }
 
   .sidebar .submenu {
