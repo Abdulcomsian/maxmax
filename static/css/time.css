@@ -412,6 +412,135 @@ body {
   padding: 5%;
 }
 
+.main-panel .main-content .filter-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-panel .main-content .filter-div .first-half {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-panel .main-content .filter-div .first-half .text > span {
+  color: #150337;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-panel .main-content .filter-div .first-half > .input select {
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  padding: 2%;
+
+  height: 2.3125rem;
+  width: 13.5625rem;
+
+  background: url(../images/Arrow-2.png) no-repeat right #ffffff;
+  background-position-x: 97%;
+
+  appearance: none;
+
+  color: #8270a3;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-panel .main-content .filter-div .first-half > .input select:focus {
+  outline: none;
+}
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  .check-box
+  input[type="checkbox"] {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-left: 1rem;
+}
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  .check-box
+  input[type="checkbox"]:checked {
+  accent-color: #8270a3;
+  border: none;
+}
+
+.main-panel .main-content .filter-div .second-half .filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  > .filter-1
+  > select,
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  > .filter-2
+  > select {
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  padding: 2%;
+
+  width: 13.5625rem;
+  height: 2.3125rem;
+
+  background: url(../images/Arrow-2.png) no-repeat right #ffffff;
+  background-position-x: 97%;
+
+  appearance: none;
+
+  color: #8270a3;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  > .filter-1
+  > select:focus,
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  > .filter-2
+  > select:focus {
+  outline: none;
+}
+
 @media (max-width: 1200px) {
   .sidebar {
     width: 20%;

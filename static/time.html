@@ -298,7 +298,48 @@
         </div>
         <!-- Content -->
         <div class="main-content">
-          <div class="content"></div>
+          <div class="content">
+            <div class="filter-div">
+              <div class="first-half">
+                <div class="text"><span>Metric</span></div>
+                <div class="input">
+                  <form id="metricForm">
+                    <div class="form-group">
+                      <select name="metric" id="metric">
+                        <option value="">Select Option</option>
+                        <option value="metric">Metric</option>
+                      </select>
+                      <!-- <span id="companyURLError" class="error"></span> -->
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="second-half">
+                <form id="metricForm">
+                  <div class="filters">
+                    <div class="filter-1">
+                      <select name="metric" id="metric">
+                        <option value="">Filter 1</option>
+                        <option value="metric">Metric</option>
+                      </select>
+                    </div>
+                    <div class="check-box">
+                      <div class="form-group type-checkbox">
+                        <input type="checkbox" id="termsCheckbox" required />
+                        <span for="termsCheckbox"> Compared to ... </span>
+                      </div>
+                    </div>
+                    <div class="filter-2">
+                      <select name="metric" id="metric">
+                        <option value="">Filter 2</option>
+                        <option value="metric">Metric</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
