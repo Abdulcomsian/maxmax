@@ -479,6 +479,19 @@ body {
   .second-half
   .filters
   .check-box
+  > .form-group {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+  }
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  .check-box
   input[type="checkbox"] {
   width: 0.875rem;
   height: 0.875rem;
@@ -494,6 +507,23 @@ body {
   input[type="checkbox"]:checked {
   accent-color: #8270a3;
   border: none;
+}
+
+.main-panel
+  .main-content
+  .filter-div
+  .second-half
+  .filters
+  .check-box
+  > .form-group
+  > span {
+  color: #67548b;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 .main-panel .main-content .filter-div .second-half .filters {
