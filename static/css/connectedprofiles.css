@@ -161,13 +161,9 @@ body {
 }
 
 .center {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: max-content;
   width: 100%;
-  justify-content: center;
+  height: 60%;
+  margin-top: 40%;
   flex-grow: 1;
 }
 
@@ -177,7 +173,7 @@ body {
 
 .sidebar .submenu {
   display: none;
-  height: 20%;
+  height: initial;
 }
 
 .sidebar .submenu .sub-menu-item .item {
@@ -420,7 +416,7 @@ body {
 }
 
 .main-panel .main-content .content {
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
 }
 
@@ -660,9 +656,9 @@ body {
     display: block;
   }
 
-  .sidebar .submenu {
+  /* .sidebar .submenu {
     height: 25%;
-  }
+  } */
 
   .sidebar-open {
     display: flex;

@@ -161,13 +161,9 @@ body {
 }
 
 .center {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: max-content;
   width: 100%;
-  justify-content: center;
+  height: 60%;
+  margin-top: 40%;
   flex-grow: 1;
 }
 
@@ -177,7 +173,7 @@ body {
 
 .sidebar .submenu {
   display: none;
-  height: 20%;
+  height: initial;
 }
 
 .sidebar .submenu .sub-menu-item .item {
@@ -420,7 +416,7 @@ body {
 }
 
 .main-panel .main-content .content {
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
 }
 
@@ -473,18 +469,12 @@ body {
   outline: none;
 }
 
-.main-panel
-  .main-content
-  .filter-div
-  .second-half
-  .filters
-  .check-box
-  > .form-group {
-    display: flex;
-    align-items: center;
+.main-panel .main-content .filter-div .second-half .filters .check-box {
+  display: flex;
+  align-items: center;
 
-    gap: 0.5rem;
-  }
+  gap: 0.5rem;
+}
 
 .main-panel
   .main-content
@@ -509,14 +499,7 @@ body {
   border: none;
 }
 
-.main-panel
-  .main-content
-  .filter-div
-  .second-half
-  .filters
-  .check-box
-  > .form-group
-  > span {
+.main-panel .main-content .filter-div .second-half .filters .check-box > span {
   color: #67548b;
   font-family: "Poppins", sans-serif;
   font-size: 0.9375rem;
@@ -646,10 +629,6 @@ body {
 
   .main-panel .main-head .right-side > button {
     display: block;
-  }
-
-  .sidebar .submenu {
-    height: 25%;
   }
 
   .sidebar-open {
