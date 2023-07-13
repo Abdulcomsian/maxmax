@@ -8,10 +8,29 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="{{url_for('static', filename='css/sidebar.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='css/main.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='css/topbar.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="{{url_for('static', filename='css/connectedprofiles.css')}}"
     />
 
-    <title>Connected Profiles</title>
+    <!-- Chart-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -25,316 +44,50 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <title>Connected Profiles</title>
   </head>
   <body>
-    <div>
-      <!-- Overlay -->
-      <div class="overlay"></div>
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="logo">
-          <div class="div-left">
-            <a href="./" class="simple-text logo-mini">
-              <div class="logo-img">
-                <img src="../static/images/Palgorithm.png" alt="logo" />
-              </div>
-            </a>
-          </div>
-          <div
-            class="div-right"
-            style="
-              background-image: url(../static/images/ic_round-arrow-back.png);
-            "
-          ></div>
-        </div>
-
-        <div class="btn-group brand-item-dropdown">
-          <div
-            class="brand-item w-100"
-            data-bs-toggle="dropdown"
-            data-bs-display="static"
-            aria-expanded="false"
-          >
-            <div class="icon-text">
-              <div
-                class="icon"
-                style="
-                  background-image: url(../static/images/fluent_building-24-regular.png);
-                "
-              ></div>
-              <div class="text"><span>Brand</span></div>
-            </div>
-            <div>
-              <img src="../static/images/Arrow-2.png" alt="" />
-            </div>
-          </div>
-
-          <ul class="dropdown-menu dropdown-menu-lg-end">
-            <li><a class="dropdown-item" href="#">Brand Name</a></li>
-            <li><a class="dropdown-item" href="#">Brand Name</a></li>
-            <li>
-              <a class="new-dropdown-item" href="#"> +Add New Brand </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="center">
-          <div class="brand-item min-padding">
-            <div class="icon-text">
-              <div
-                class="icon"
-                style="
-                  background-image: url(../static/images/akar-icons_dashboard.png);
-                "
-              ></div>
-              <div class="text"><span>Dashboard</span></div>
-            </div>
-            <div>
-              <!-- <img src="../static/images/Arrow-2.png" alt="" /> -->
-            </div>
-          </div>
-
-          <div
-            class="brand-item min-padding"
-            onclick="toggleSubMenu('submenu1', 'profile-caret')"
-          >
-            <div class="icon-text">
-              <div
-                class="icon"
-                style="
-                  background-image: url(../static/images/iconamoon_profile-1.png);
-                "
-              ></div>
-              <div class="text"><span>Profile</span></div>
-            </div>
-            <div>
-              <img
-                id="profile-caret"
-                src="../static/images/Arrow-2.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="submenu" id="submenu1">
-            <a href="./connectedprofiles">
-              <div class="sub-menu-item active-item">
-                <div class="item">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Sidebar -->
+    {% include 'sidebar.html' %}
+    <!-- Main -->
+    <div class="main-panel">
+      <!-- Topbar -->
+      {% include 'topbar.html' %}
+      <!-- Content -->
+      <div class="main-content">
+        <div class="connected-profiles">
+          <div class="card profile-card">
+            <div class="section">
+              <div class="first-half">
+                <div class="logo-text">
                   <div>
-                    <span>Connect</span>
+                    <img
+                      src="../static/images/logos_instagram.png"
+                      alt="instagram"
+                    />
                   </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="sub-menu-item">
-                <div class="item">
                   <div>
-                    <span>Media</span>
+                    <span>Instagram</span>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="button-primary">
+                    <button>Connected</button>
+                  </div>
+                  <div class="button-secondary">
+                    <form>Disconnect</form>
                   </div>
                 </div>
               </div>
-            </a>
-
-            <a href="#">
-              <div class="sub-menu-item">
-                <div class="item">
-                  <div>
-                    <span>Tags</span>
-                  </div>
+              <div class="second-half">
+                <div class="text-line-1">
+                  <span>@Username</span>
                 </div>
-              </div>
-            </a>
-          </div>
-
-          <div
-            class="brand-item min-padding"
-            onclick="toggleSubMenu('submenu2', 'report-caret')"
-          >
-            <div class="icon-text">
-              <div
-                class="icon"
-                style="
-                  background-image: url(../static/images/tabler_report-analytics.png);
-                "
-              ></div>
-              <div class="text"><span>Reports</span></div>
-            </div>
-            <div>
-              <img
-                id="report-caret"
-                src="../static/images/Arrow-2.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="submenu" id="submenu2">
-            <a href="#">
-              <div class="sub-menu-item">
-                <div class="item">
-                  <div>
-                    <span>Test</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./time">
-              <div class="sub-menu-item">
-                <div class="item">
-                  <div>
-                    <span>Time</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="sub-menu-item">
-                <div class="item">
-                  <div>
-                    <span>Train</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="btn-group setting-item-dropdown dropup">
-          <div
-            class="brand-item bottom"
-            class="btn btn-secondary dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <div class="icon-text">
-              <div
-                class="icon"
-                style="
-                  background-image: url(../static/images/iconamoon_profile.png);
-                "
-              ></div>
-              <div class="text"><span>Settings</span></div>
-            </div>
-            <div>
-              <img src="../static/images/Arrow-2.png" alt="" />
-            </div>
-          </div>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item border-0" href="#">Menu item</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Main -->
-      <div class="main-panel">
-        <!-- Topbar -->
-        <div class="topbar">
-          <div class="main-head">
-            <div class="left-side">
-              <span> Connect Profile </span>
-            </div>
-            <div class="right-side">
-              <button id="test-button" type="button" class="btn btn-light">
-                <i class="bi bi-list"></i>
-              </button>
-              <div class="btn-group profile-item-dropdown">
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <div class="icon">
-                    <img src="../static/images/logos_youtube-icon.png" alt="" />
-                  </div>
-                  <span class="text">Profile Username</span>
-                  <img src="../static/images/Arrow-2.png" alt="" />
-                </div>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div class="icon">
-                        <img
-                          src="../static/images/logos_youtube-icon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="text">
-                        <span class="text">Profile Username</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div class="icon">
-                        <img
-                          src="../static/images/logos_youtube-icon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="text">
-                        <span class="text">Profile Username</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div class="icon">
-                        <img
-                          src="../static/images/logos_youtube-icon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="text">
-                        <span class="text">Profile Username</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="new-dropdown-item border-0" href="#"
-                      >+Add New Profile</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Content -->
-        <div class="main-content">
-          <div class="content">
-            <div class="card profile-card">
-              <div class="section">
-                <div class="first-half">
-                  <div class="logo-text">
-                    <div>
-                      <img
-                        src="../static/images/logos_instagram.png"
-                        alt="instagram"
-                      />
-                    </div>
-                    <div>
-                      <span>Instagram</span>
-                    </div>
-                  </div>
-                  <div class="buttons">
-                    <div class="button-primary">
-                      <button>Connected</button>
-                    </div>
-                    <div class="button-secondary">
-                      <button>Disconnect</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="second-half">
-                  <div class="text-line-1">
-                    <span>@Username</span>
-                  </div>
-                  <div class="text-line-2">
-                    <span>Connected on: 10:55:15 / 05.05.2023.</span>
-                  </div>
+                <div class="text-line-2">
+                  <span>Connected on: 10:55:15 / 05.05.2023.</span>
                 </div>
               </div>
             </div>
@@ -344,44 +97,7 @@
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const sidebar = document.querySelector(".sidebar");
-        const overlay = document.querySelector(".overlay");
-        const sidebarToggle = document.querySelector(".div-right");
-        const testButton = document.querySelector("#test-button");
-
-        sidebar.classList.remove("sidebar-open"); // Remove the sidebar-open class by default
-
-        testButton.addEventListener("click", function () {
-          sidebar.classList.add("sidebar-open");
-          overlay.classList.add("overlay-visible");
-        });
-
-        sidebarToggle.addEventListener("click", function () {
-          sidebar.classList.remove("sidebar-open");
-          overlay.classList.remove("overlay-visible");
-        });
-      });
-
-      var submenu = document.getElementById("submenu1");
-      submenu.style.display = "block";
-      var test = document.getElementById("profile-caret");
-      test.src = "../static/images/Arrow-2-(1).png";
-
-      function toggleSubMenu(id, caretId) {
-        var submenu = document.getElementById(id);
-        if (submenu.style.display === "none") {
-          var test = document.getElementById(caretId);
-          test.src = "../static/images/Arrow-2-(1).png";
-          submenu.style.display = "block";
-        } else {
-          var test = document.getElementById(caretId);
-          test.src = "../static/images/Arrow-2.png";
-          submenu.style.display = "none";
-        }
-      }
-    </script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

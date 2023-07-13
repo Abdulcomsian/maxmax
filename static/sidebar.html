@@ -1,0 +1,200 @@
+<div class="sidebar">
+  <div class="logo">
+    <div class="div-left">
+      <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+        <div class="logo-img">
+          <img src="../static/images/Palgorithm.png" alt="logo" />
+        </div>
+      </a>
+    </div>
+    <div
+      class="div-right"
+      style="background-image: url(../static/images/ic_round-arrow-back.png)"
+    ></div>
+  </div>
+
+  <div class="btn-group brand-item-dropdown">
+    <div
+      class="brand-item w-100"
+      data-bs-toggle="dropdown"
+      data-bs-display="static"
+      aria-expanded="false"
+    >
+      <div class="icon-text">
+        <div
+          class="icon"
+          style="
+            background-image: url(../static/images/fluent_building-24-regular.png);
+          "
+        ></div>
+        <div class="text"><span>Brand</span></div>
+      </div>
+      <div>
+        <img src="../static/images/Arrow-2.png" alt="" />
+      </div>
+    </div>
+
+    <ul class="dropdown-menu dropdown-menu-lg-end">
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li>
+        <a class="new-dropdown-item" href="#">+Add New Brand</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="center">
+    <div class="brand-item min-padding">
+      <div class="icon-text">
+        <div
+          class="icon"
+          style="
+            background-image: url(../static/images/akar-icons_dashboard.png);
+          "
+        ></div>
+        <div class="text"><span>Dashboard</span></div>
+      </div>
+      <div>
+        <!-- <img src="../static/images/Arrow-2.png" alt="" /> -->
+      </div>
+    </div>
+
+    <div
+      class="brand-item min-padding"
+      onclick="toggleSubMenu('submenu1', 'submenu1-caret')"
+    >
+      <div class="icon-text">
+        <div
+          class="icon"
+          style="
+            background-image: url(../static/images/iconamoon_profile-1.png);
+          "
+        ></div>
+        <div class="text"><span>Profile</span></div>
+      </div>
+      <div>
+        <img id="submenu1-caret" src="../static/images/Arrow-2.png" alt="" />
+      </div>
+    </div>
+    <div class="submenu" id="submenu1">
+      <a href="./connectedprofiles">
+        <div id="connectedprofiles" class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Connect</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Media</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Tags</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="brand-item min-padding"
+      onclick="toggleSubMenu('submenu2', 'submenu2-caret')"
+    >
+      <div class="icon-text">
+        <div
+          class="icon"
+          style="
+            background-image: url(../static/images/tabler_report-analytics.png);
+          "
+        ></div>
+        <div class="text"><span>Reports</span></div>
+      </div>
+      <div>
+        <img id="submenu2-caret" src="../static/images/Arrow-2.png" alt="" />
+      </div>
+    </div>
+    <div class="submenu" id="submenu2">
+      <a href="#">
+        <div class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Test</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./time">
+        <div id="time" class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Time</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="sub-menu-item">
+          <div class="item">
+            <div>
+              <span>Train</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="btn-group setting-item-dropdown dropup">
+    <div
+      class="brand-item bottom"
+      class="btn btn-secondary dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <div class="icon-text">
+        <div
+          class="icon"
+          style="background-image: url(../static/images/iconamoon_profile.png)"
+        ></div>
+        <div class="text"><span>Settings</span></div>
+      </div>
+      <div>
+        <img src="../static/images/Arrow-2.png" alt="" />
+      </div>
+    </div>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item border-0" href="#">Menu item</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const pathname = window.location.pathname;
+  const splits = pathname.split("/");
+  if (splits[1]) {
+    const element = document.getElementById(splits[1]);
+    element.classList.add("active-item");
+    element.parentElement.parentElement.style.display = "block";
+
+    var caret = document.getElementById(
+      `${element.parentElement.parentElement.id}-caret`
+    );
+
+    caret.src = "../static/images/Arrow-2-(1).png";
+  }
+</script>
