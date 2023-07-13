@@ -49,7 +49,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
 }
 
 .create-brand .card-body .form-group > input::placeholder {

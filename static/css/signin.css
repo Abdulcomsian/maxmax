@@ -22,8 +22,8 @@ body {
 }
 
 .login-card .card-body .form-group > input[type="text"],
-input[type="email"],
-input[type="password"] {
+.login-card .card-body .form-group > input[type="email"],
+.login-card .card-body .form-group > input[type="password"] {
   border-radius: 0.625rem;
   border: 1px solid #dfd9ef;
 
@@ -35,7 +35,6 @@ input[type="password"] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
 }
 
 .login-card .card-body .form-group > input::placeholder {

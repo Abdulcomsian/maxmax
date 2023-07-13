@@ -48,7 +48,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
 }
 
 .create-company .card-body .form-group > input::placeholder {
@@ -74,11 +73,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
 }
 
 .create-company .card-body .form-group > select:focus {
-  /* border: none; */
   outline: none;
 }
 

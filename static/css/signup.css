@@ -29,9 +29,9 @@ body {
 }
 
 .signup-card .card-body .form-group > input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"] {
+.signup-card .card-body .form-group > input[type="email"],
+.signup-card .card-body .form-group > input[type="password"],
+.signup-card .card-body .form-group > input[type="tel"] {
   border-radius: 0.625rem;
   border: 1px solid #dfd9ef;
 
@@ -43,7 +43,6 @@ input[type="tel"] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
 }
 
 .signup-card .card-body .form-group > input[type="checkbox"] {
