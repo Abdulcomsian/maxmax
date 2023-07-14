@@ -262,7 +262,7 @@
   }
 
   .main-panel .main-head .right-side > button {
-    display: block;
+    display: block !important;
   }
 
   .main-panel {

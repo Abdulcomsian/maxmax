@@ -1,5 +1,5 @@
 .time {
-  overflow: auto;
+  /* overflow: auto; */
   height: 100%;
 }
 
@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  height: 7%;
+  height: 6%;
 
   padding-top: 0%;
   padding-right: 3%;
-  padding-bottom: 1%;
+  padding-bottom: 0%;
   padding-left: 3%;
 }
 
@@ -150,12 +150,18 @@
 
   padding: 1rem;
 
-  height: 93%;
+  height: 94%;
 }
 
 .time .graph-card > canvas {
   width: 100% !important;
-  height: 100% !important;
+  height: 97% !important;
+}
+
+.time .graph-card > .legend-container > ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
 @media (max-width: 1440px) {
@@ -173,6 +179,8 @@
     flex-direction: column;
 
     height: auto;
+
+    margin-bottom: 1%;
   }
 
   .time .filter-div > .first-half,
@@ -187,7 +195,11 @@
   .main-panel .main-content .graph-card {
     height: auto;
   }
-}
+
+  .time .graph-card > canvas {
+    height: 100%;
+  }
+  }
 
 @media (max-width: 786px) {
   .time .filter-div {
