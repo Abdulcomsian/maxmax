@@ -5,29 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='css/sidebar.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='css/main.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="./css/sidebar.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='css/topbar.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="./css/topbar.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='css/connectedprofiles.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="./css/connectedprofiles.css" />
 
     <!-- Chart-JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -45,7 +29,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
-    <title>Connected Profiles</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     <!-- Overlay -->
@@ -64,10 +48,7 @@
               <div class="first-half">
                 <div class="logo-text">
                   <div>
-                    <img
-                      src="../static/images/logos_instagram.png"
-                      alt="instagram"
-                    />
+                    <img src="./images/logos_instagram.png" alt="instagram" />
                   </div>
                   <div>
                     <span>Instagram</span>
@@ -97,7 +78,7 @@
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="./js/main.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

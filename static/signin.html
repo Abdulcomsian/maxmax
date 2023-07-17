@@ -5,11 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='css/signin.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="./css/signin.css" />
 
     <title>Sign In</title>
 
@@ -26,7 +22,7 @@
       <div class="card login-card">
         <div class="container">
           <div class="d-flex flex-column align-items-center">
-            <img src="../static/images/Palgorithm.png" alt="logo" />
+            <img src="./images/Palgorithm.png" alt="logo" />
           </div>
           <div class="card-body">
             <form id="registrationForm">
@@ -49,7 +45,7 @@
                   required
                 />
                 <img
-                  src="../static/images/solar_eye-broken.png"
+                  src="./images/solar_eye-broken.png"
                   class="password-icon"
                   id="togglePassword"
                   alt=""
@@ -64,9 +60,7 @@
               </div>
             </form>
             <div class="create-new-account">
-              <span>
-                Don’t have Account? <a href="./signup"> Sign Up</a>
-              </span>
+              <span> Don’t have Account? <a href="/signup"> Sign Up</a> </span>
             </div>
           </div>
         </div>

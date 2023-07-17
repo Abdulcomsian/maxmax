@@ -83,7 +83,6 @@ const htmlLegendPlugin = {
       boxSpan.style.width = "20px";
       boxSpan.style.borderRadius = "50px";
 
-      
       // Text
       const textContainer = document.createElement("p");
       textContainer.style.color = item.fontColor;
@@ -165,18 +164,18 @@ var options = {
 };
 
 // Create the chart
-var ctx = document.getElementById("curveChart").getContext("2d");
-var chart = new Chart(ctx, {
-  type: "line",
-  data: data,
-  options: options,
-  plugins: [htmlLegendPlugin],
-});
+if (document.getElementById("curveChart")) {
+  var ctx = document.getElementById("curveChart").getContext("2d");
+  var chart = new Chart(ctx, {
+    type: "line",
+    data: data,
+    options: options,
+    plugins: [htmlLegendPlugin],
+  });
+}
 
 function toggleSubMenu(id, caretId) {
-  console.log("here 111");
   var submenu = document.getElementById(id);
-  console.log(submenu.style.display);
   if (submenu.style.display === "none" || submenu.style.display === "") {
     var test = document.getElementById(caretId);
     test.src = "../static/images/Arrow-2-(1).png";
