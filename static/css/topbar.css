@@ -35,6 +35,24 @@
 
 .main-panel > .topbar > .main-head > .left-side {
   width: 30%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-panel > .topbar > .main-head > .left-side > .back-button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.625rem;
+  background: #ede9fa;
+  background-image: url(../images/ic_round-arrow-back.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+
+  cursor: pointer;
 }
 
 .main-panel > .topbar > .main-head > .left-side > span {

@@ -68,13 +68,16 @@ def media():
     return render_template("media.html", title="Media")
 
 
-@app.route('/media/analytics')
-def analytics():
+@app.route('/media/analytics-time')
+def analyticsTime():
     id = request.args.get('id')
-    print(id)
-    # Render your analytics.html template and pass the 'id' as a parameter
-    # You can use this 'id' in your analytics.html template as needed
-    return render_template('analytics.html', id=id, title="Analytics")
+    return render_template('analytics-time.html', id=id, title="Analytics")
+
+
+@app.route('/media/analytics-tags')
+def analyticsTags():
+    id = request.args.get('id')
+    return render_template('analytics-tags.html', id=id, title="Tags")
 
 
 if __name__ == '__main__':

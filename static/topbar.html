@@ -1,6 +1,9 @@
 <div class="topbar">
   <div class="main-head">
     <div class="left-side">
+      {% if title == "Tags" or title == "Analytics" %}
+      <div class="back-button" onclick="goBack()"></div>
+      {% endif %}
       <span>{{ title }}</span>
       {% if title == "Existing Tags" %}
       <button
@@ -59,3 +62,8 @@
     </div>
   </div>
 </div>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
