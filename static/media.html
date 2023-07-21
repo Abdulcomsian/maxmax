@@ -5,18 +5,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/topbar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/topbar.css" />
 
+    <link rel="stylesheet" type="text/css" href="/css//media.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/perfect-scrollbar.js"
+      integrity="sha512-EXRb/1mTZs4VEgPqlabQWHw2hnGn269OM3QvLfLeEeEp7GznVGkbYdu+bU9bb/XLYda6drPfWCyoMm6RYwSZMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/css/perfect-scrollbar.css"
+      integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>{{ title }}</title>
@@ -31,10 +47,256 @@
       <!-- Topbar -->
       {% include 'topbar.html' %}
       <!-- Content -->
+      <div class="main-content">
+        <div class="filters">
+          <div class="search">
+            <div class="input">
+              <img
+                src="./images/ion_search.png"
+                class="search-icon"
+                id="togglePassword"
+                alt=""
+              />
+              <input type="text" id="search" placeholder="Search Media..." />
+            </div>
+            <div class="button">
+              <button>
+                <img src="./images/solar_filter-outline.png" alt="filter" />
+              </button>
+            </div>
+          </div>
+          <div class="sort">
+            <select name="cars" id="cars">
+              <option value="">Sort</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+        </div>
+        <div id="scroll-container" class="media-list perfect-scrollbar">
+          <div>
+            <div class="heading-section">
+              <div class="section-1"><span>Media</span></div>
+              <div class="section-2"><span>Post ID</span></div>
+              <div class="section-3"><span>Title</span></div>
+              <div class="section-4"><span>Caption</span></div>
+              <div class="section-5"><span>Data</span></div>
+              <div class="section-6"><span>Views</span></div>
+              <div class="section-7"><span>Actions</span></div>
+            </div>
+
+            <!-- 1 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <a href="">
+                  <div class="action-1"></div>
+                </a>
+                <a href="">
+                  <div class="action-2"></div>
+                </a>
+                <a href="/media/analytics?id=2">
+                  <div class="action-3"></div>
+                </a>
+                <a href="">
+                  <div class="action-4"></div>
+                </a>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card media-data-section">
+              <div class="section-1">
+                <div class="thumbnail"></div>
+              </div>
+              <div class="section-2"><span>25684689</span></div>
+              <div class="section-3">
+                <div class="text">
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="edit"></div>
+              </div>
+              <div class="section-4">
+                <div class="text">
+                  <span>Lorem ipsum.</span>
+                </div>
+                <div class="info"></div>
+              </div>
+              <div class="section-5"><span>08/08/2022</span></div>
+              <div class="section-6"><span>5.5K</span></div>
+              <div class="section-7">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+                <div class="action-3"></div>
+                <div class="action-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="./js/main.js"></script>
+    <script src="./js/perfect-scrollbar.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

@@ -18,10 +18,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 const getOrCreateLegendList = (chart, id) => {
-  console.log(id);
   const legendContainer = document.getElementById(id);
-
-  console.log(legendContainer);
   let listContainer = legendContainer.querySelector("ul");
 
   if (!listContainer) {

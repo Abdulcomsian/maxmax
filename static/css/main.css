@@ -7,3 +7,18 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
+
+.modal-backdrop.fade {
+  background: rgba(21, 3, 55, 0.3);
+  backdrop-filter: blur(3.5px);
+}
+
+/* .modal {
+  background: rgba(21, 3, 55, 0.3);
+
+  backdrop-filter: blur(3.5px);
+} */

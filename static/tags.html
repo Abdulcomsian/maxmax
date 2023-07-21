@@ -11,12 +11,41 @@
 
     <link rel="stylesheet" type="text/css" href="./css/topbar.css" />
 
+    <link rel="stylesheet" type="text/css" href="./css/tags.css" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-tagsinput@0.8.0/dist/bootstrap-tagsinput.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/perfect-scrollbar.js"
+      integrity="sha512-EXRb/1mTZs4VEgPqlabQWHw2hnGn269OM3QvLfLeEeEp7GznVGkbYdu+bU9bb/XLYda6drPfWCyoMm6RYwSZMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/css/perfect-scrollbar.css"
+      integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>{{ title }}</title>
@@ -31,10 +60,286 @@
       <!-- Topbar -->
       {% include 'topbar.html' %}
       <!-- Content -->
+      <div class="main-content">
+        <div id="scroll-container" class="tags perfect-scrollbar">
+          <div>
+            <div class="heading-section">
+              <div class="section-1"><span>TAG NAME</span></div>
+              <div class="section-2"><span>TAG TYPE</span></div>
+              <div class="section-3"><span>TAG OPTIONS</span></div>
+              <div class="section-4"><span>ACTIONS</span></div>
+            </div>
+
+            <!-- 1 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="card tags-data-section">
+              <div class="section-1"><span>Actor</span></div>
+              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-3">
+                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+              </div>
+              <div class="section-4">
+                <div class="action-1"></div>
+                <div class="action-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="createTagModal"
+      tabindex="-1"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered vertically-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="heading">
+              <!-- <h5 class="modal-title" id="myModalLabel">Modal Title</h5> -->
+            </div>
+            <div class="close-button">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="create-tag-form">
+                <div class="heading">
+                  <span> Create Tag</span>
+                </div>
+                <div class="form-group">
+                  <select name="cars" id="cars" required>
+                    <option value="">Select Type</option>
+                    <option value="saab">Single Select</option>
+                    <option value="mercedes">Multiple Select</option>
+                    <option value="audi">Numeric</option>
+                  </select>
+                  <!-- <span id="companyURLError" class="error"></span> -->
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="brandName"
+                    placeholder="Enter Name..."
+                    required
+                  />
+                  <!-- <span id="brandNameError" class="error"></span> -->
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control p-4"
+                    data-role="tagsinput"
+                  />
+                </div>
+
+                <div class="note">
+                  <span> Enter to Create Tag </span>
+                </div>
+
+                <div class="buttons">
+                  <div class="button-1">
+                    <button class="action-button-1">Create</button>
+                  </div>
+                  <div class="button-2">
+                    <button class="action-button-2">
+                      Create and Add Another
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="./js/main.js"></script>
+    <script src="./js/perfect-scrollbar.js"></script>
+    <!-- <script src="./js/tagsinput.js"></script> -->
+    <script>
+      $(function () {
+        $("input")
+          .on("change", function (event) {
+            var $element = $(event.target);
+            var $container = $element.closest(".example");
+
+            if (!$element.data("tagsinput")) return;
+
+            var val = $element.val();
+            if (val === null) val = "null";
+            var items = $element.tagsinput("items");
+
+            $("code", $("pre.val", $container)).html(
+              $.isArray(val)
+                ? JSON.stringify(val)
+                : '"' + val.replace('"', '\\"') + '"'
+            );
+            $("code", $("pre.items", $container)).html(
+              JSON.stringify($element.tagsinput("items"))
+            );
+          })
+          .trigger("change");
+      });
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

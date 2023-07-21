@@ -1,5 +1,5 @@
 import jinja2
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request
 
 
 app = Flask(__name__, template_folder='static')
@@ -60,12 +60,21 @@ def time():
 
 @app.route('/tags')
 def tags():
-    return render_template("tags.html", title="Tags")
+    return render_template("tags.html", title="Existing Tags")
 
 
 @app.route('/media')
 def media():
     return render_template("media.html", title="Media")
+
+
+@app.route('/media/analytics')
+def analytics():
+    id = request.args.get('id')
+    print(id)
+    # Render your analytics.html template and pass the 'id' as a parameter
+    # You can use this 'id' in your analytics.html template as needed
+    return render_template('analytics.html', id=id, title="Analytics")
 
 
 if __name__ == '__main__':

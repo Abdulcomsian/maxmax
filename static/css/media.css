@@ -1,0 +1,310 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 7%;
+}
+
+.filters .search {
+  width: 40%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filters .search .input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  background: #fff;
+
+  padding: 3%;
+
+  height: 3.125rem;
+  width: 100%;
+}
+
+.filters .search .input .search-icon {
+  margin-right: 2%;
+}
+
+.filters .search .input > input[type="text"] {
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+
+  color: rgba(130, 112, 163, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filters .search .input > input[type="text"]::placeholder {
+  color: rgba(130, 112, 163, 0.8);
+}
+
+.filters .search .button button {
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  background: rgba(255, 255, 255, 0.5);
+
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.filters .sort {
+  width: 10%;
+}
+
+.filters .sort select {
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 1px solid #dfd9ef;
+  padding: 5%;
+
+  height: 3.125rem;
+
+  background: url(../images/Arrow-2.png) no-repeat right #ffffff;
+  background-position-x: 97%;
+
+  appearance: none;
+
+  color: #8270a3;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filters .sort select:focus {
+  outline: none;
+}
+
+.media-list {
+  overflow: auto;
+  height: 93%;
+  position: relative;
+}
+
+.media-list div {
+  padding-right: 1%;
+}
+
+.media-list .heading-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+.media-list .heading-section .section-1 {
+  width: 15%;
+}
+
+.media-list .heading-section .section-2 {
+  width: 10%;
+}
+
+.media-list .heading-section .section-3 {
+  width: 30%;
+}
+
+.media-list .heading-section .section-4 {
+  width: 15%;
+}
+
+.media-list .heading-section .section-5 {
+  width: 10%;
+}
+.media-list .heading-section .section-6 {
+  width: 10%;
+}
+.media-list .heading-section .section-7 {
+  width: 10%;
+}
+
+.media-list .heading-section .section-1 span,
+.media-list .heading-section .section-2 span,
+.media-list .heading-section .section-3 span,
+.media-list .heading-section .section-4 span,
+.media-list .heading-section .section-5 span,
+.media-list .heading-section .section-6 span,
+.media-list .heading-section .section-7 span {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 173.9%;
+  letter-spacing: 0.09344rem;
+  text-transform: uppercase;
+}
+
+.media-list .media-data-section {
+  padding-left: 0.858%;
+  padding-right: 0.85%;
+
+  margin-bottom: 1%;
+
+  border-radius: 1.25rem;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.56);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-height: 6.875rem;
+}
+
+.media-list .media-data-section .section-1 {
+  width: 15%;
+}
+
+.media-list .media-data-section .section-2 {
+  width: 10%;
+}
+
+.media-list .media-data-section .section-3 {
+  width: 30%;
+}
+
+.media-list .media-data-section .section-4 {
+  width: 15%;
+}
+
+.media-list .media-data-section .section-5 {
+  width: 10%;
+}
+
+.media-list .media-data-section .section-6 {
+  width: 10%;
+}
+
+.media-list .media-data-section .section-7 {
+  width: 10%;
+}
+
+.media-list .media-data-section .section-3,
+.media-list .media-data-section .section-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.media-list .media-data-section .section-1 .thumbnail {
+  border-radius: 1.25rem;
+  border: 2px solid #fff;
+  background: url(../images/bg.png), lightgray 50% / cover no-repeat;
+  backdrop-filter: blur(10px);
+
+  width: 7.8125rem;
+  height: 5.6875rem;
+}
+
+.media-list .media-data-section .section-2 span,
+.media-list .media-data-section .section-3 .text span,
+.media-list .media-data-section .section-4 .text span,
+.media-list .media-data-section .section-5 span,
+.media-list .media-data-section .section-6 span {
+  color: #150337;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 232.9%;
+}
+
+.media-list .media-data-section .section-3 .edit {
+  background-image: url(../images/material-symbols_edit-outline.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1rem;
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-4 .info {
+  background-image: url(../images/fluent_info-12-regular.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1rem;
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.media-list .media-data-section .section-7 .action-1 {
+  background-image: url(../images/uil_play.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1.49738rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-7 .action-2 {
+  background-image: url(../images/tabler_tags.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1.49738rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-7 .action-3 {
+  background-image: url(../images/ion_analytics-outline.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1.49738rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-7 .action-4 {
+  background-image: url(../images/material-symbols_download.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1.49738rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}

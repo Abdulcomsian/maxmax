@@ -33,12 +33,36 @@
   justify-content: space-between;
 }
 
+.main-panel > .topbar > .main-head > .left-side {
+  width: 30%;
+}
+
 .main-panel > .topbar > .main-head > .left-side > span {
   color: #150337;
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-panel > .topbar > .main-head > .left-side > button {
+  border-radius: 0.9375rem;
+  background: linear-gradient(131deg, #a77dfc 0%, #5e17eb 100%);
+
+  margin-left: 10%;
+
+  border: none;
+
+  width: 10.0625rem;
+  height: 2.5rem;
+
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
 }
