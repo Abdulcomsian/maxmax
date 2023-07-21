@@ -1,12 +1,12 @@
 .media-list {
-  height: 13%;
+  height: 12%;
 }
 
 .media-list .media-data-section {
   padding-left: 0.858%;
   padding-right: 0.85%;
 
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   border-radius: 1.25rem;
   border: 2px solid #fff;
@@ -109,7 +109,7 @@
   flex-direction: row;
   align-items: center;
 
-  gap: 1rem;
+  gap: 5%;
 }
 
 .media-list .media-data-section .section-7 .action-1 {
