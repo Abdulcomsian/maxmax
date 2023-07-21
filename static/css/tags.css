@@ -440,3 +440,24 @@
   line-height: normal;
   text-transform: capitalize;
 }
+
+@media (max-width: 490px) {
+  .modal .modal-dialog {
+    width: initial;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal .modal-content .modal-body .create-tag-form .buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modal .modal-content .modal-body .create-tag-form .buttons .button-1 {
+    width: 100%;
+  }
+
+  .modal .modal-content .modal-body .create-tag-form .buttons .button-2 {
+    width: 100%;
+  }
+}
