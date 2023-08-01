@@ -91,6 +91,7 @@
             <div class="section-3">
               <div
                 class="text"
+                id="caption"
                 data-tippy-content="Did you know higher-impact activities can be GOOD for your pelvic floor? Yes, running, jumping etc stimulate the pelvic floor (and core) muscles, helping to enhance their strength and endurance. THE CATCH: Proper form, function and alignment during these activities is needed to avoid unnecessary strain on the pelvic floor/core. AKA There is a balance to be had here. I wouldn’t be able to safely and successfully do this today in my workout without building the foundation and function it takes first, which I have worked on over the last 6 weeks in Ab Rehab. In phase 1 and 2, we work with the nervous system to adapt and improve coordination of muscles through lotsssss of repetitions using motor planning, muscle activation and controlled movements. This focus early on in the program has allowed me to be ready for MORE in Ab Rehab and in life! To optimize neuromuscular learning, we focus on deliberate and quality practice in Ab Rehab, while gradually progressing in complexity and intensity, and incorporating feedback from your own awareness or your coaches. Our goal is to help you move (in any way you choose) in and outside of the gym safely and with good function. To join me in Ab Rehab you can grab a free trial linked in my bio. Questions?! LMK I’m always happy to help! #AbRehab #postpregnancy #diastasisrecti #pelvicfloor"
               >
                 <span>
@@ -119,7 +120,12 @@
                   #pelvicfloor
                 </span>
               </div>
-              <div class="edit"></div>
+              <div class="edit" onclick="editCaption()"></div>
+              <div
+                class="save"
+                style="display: none"
+                onclick="saveCaption()"
+              ></div>
             </div>
             <div class="section-4">
               <div class="text">
@@ -159,7 +165,11 @@
               <div class="section-1"><span>Actor</span></div>
               <div class="section-2"><span>Multiple Select</span></div>
               <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+                <div class="selected"><span> Max </span></div>
+                <div class="not-selected"><span>Nancy</span></div>
+                <div class="not-selected"><span>Kenzie</span></div>
+                <div class="selected"><span>Lea</span></div>
+                <div class="selected"><span>Paisley</span></div>
               </div>
             </div>
 
@@ -168,97 +178,34 @@
               <div class="section-1"><span>Actor</span></div>
               <div class="section-2"><span>Multiple Select</span></div>
               <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+                <div class="selected"><span> Yes </span></div>
+                <div class="not-selected"><span>No</span></div>
               </div>
             </div>
 
             <!-- 3 -->
             <div class="card tags-data-section">
               <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-2"><span>Single Select</span></div>
               <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+                <span>Max</span>
               </div>
             </div>
 
             <!-- 4 -->
             <div class="card tags-data-section">
               <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
+              <div class="section-2"><span>Numeric</span></div>
               <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 10 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 11 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
-              </div>
-            </div>
-
-            <!-- 12 -->
-            <div class="card tags-data-section">
-              <div class="section-1"><span>Actor</span></div>
-              <div class="section-2"><span>Multiple Select</span></div>
-              <div class="section-3">
-                <span>Max, Nancy, Kenzie, Leo, Paisley</span>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="numeric"
+                    placeholder="Numeric Value"
+                    required
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -269,6 +216,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="../js/main.js"></script>
     <script src="../js/perfect-scrollbar.js"></script>
+    <script src="../static/js/caption-edit.js"></script>
     <script>
       tippy("[data-tippy-content]", {
         placement: "right", // Tooltip placement (top, bottom, left, right)

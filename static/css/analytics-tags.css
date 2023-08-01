@@ -80,6 +80,30 @@
   line-height: 232.9%;
 }
 
+.media-list .media-data-section .section-3 .text input {
+  width: 100%;
+  height: 3.125rem;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  border: 1px solid #dfd9ef !important;
+  background: #fff;
+
+  padding: 3%;
+
+  color: #8270a3;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.media-list .media-data-section .section-3 .text input::placeholder {
+  color: #8270a3;
+}
+
 .media-list .media-data-section .section-3 .text {
   text-overflow: ellipsis;
   max-width: 90%;
@@ -89,6 +113,18 @@
 
 .media-list .media-data-section .section-3 .edit {
   background-image: url(../images/material-symbols_edit-outline.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 1rem;
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+.media-list .media-data-section .section-3 .save {
+  background-image: url(../images/material-symbols_download.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -239,6 +275,80 @@
 
 .tags .tags-data-section .section-3 {
   width: 55%;
+}
+
+.tags .tags-data-section .section-3 {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+
+.tags .tags-data-section .section-3 .not-selected {
+  display: inline-flex;
+  padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  border: 1px solid #9789b2;
+
+  cursor: pointer;
+}
+
+.tags .tags-data-section .section-3 .not-selected span {
+  color: #9789b2;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.tags .tags-data-section .section-3 .selected {
+  display: inline-flex;
+  padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  background: linear-gradient(131deg, #a77dfc 0%, #5e17eb 100%);
+
+  cursor: pointer;
+}
+
+.tags .tags-data-section .section-3 .selected span {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.tags .tags-data-section .section-3 input {
+  width: 230px;
+  height: 3.125rem;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  border: 1px solid #dfd9ef !important;
+  background: #fff;
+
+  padding: 3%;
+
+  color: #8270a3;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.tags .tags-data-section .section-3 input::placeholder {
+  color: #8270a3;
 }
 
 .tags .tags-data-section .section-1 span,
