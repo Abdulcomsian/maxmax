@@ -95,10 +95,6 @@
   position: relative;
 }
 
-.media-list div {
-  padding-right: 1%;
-}
-
 .media-list .heading-section {
   display: flex;
   flex-direction: row;
@@ -214,6 +210,13 @@
 
   width: 7.8125rem;
   height: 5.6875rem;
+}
+
+.media-list .media-data-section .section-3 .text {
+  text-overflow: ellipsis;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .media-list .media-data-section .section-2 span,

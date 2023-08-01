@@ -80,6 +80,13 @@
   line-height: 232.9%;
 }
 
+.media-list .media-data-section .section-3 .text {
+  text-overflow: ellipsis;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .media-list .media-data-section .section-3 .edit {
   background-image: url(../images/material-symbols_edit-outline.png);
   background-size: cover;
