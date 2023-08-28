@@ -80,5 +80,10 @@ def analyticsTags():
     return render_template('analytics-tags.html', id=id, title="Tags")
 
 
+@app.route('/analytics')
+def analytics():
+    return render_template('analytics.html', title="Analytics-New")
+
+
 if __name__ == '__main__':
     app.run(debug=True)

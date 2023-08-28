@@ -170,16 +170,3 @@ if (document.getElementById("curveChart")) {
     plugins: [htmlLegendPlugin],
   });
 }
-
-function toggleSubMenu(id, caretId) {
-  var submenu = document.getElementById(id);
-  if (submenu.style.display === "none" || submenu.style.display === "") {
-    var test = document.getElementById(caretId);
-    test.src = "../static/images/Arrow-2-(1).png";
-    submenu.style.display = "block";
-  } else {
-    var test = document.getElementById(caretId);
-    test.src = "../static/images/Arrow-2.png";
-    submenu.style.display = "none";
-  }
-}

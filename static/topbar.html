@@ -1,16 +1,35 @@
 <div class="topbar">
   <div class="main-head">
     <div class="left-side">
-      {% if title == "Tags" or title == "Analytics" %}
+      <!-- {% if title == "Tags" or title == "Analytics" %}
       <div class="back-button" onclick="goBack()"></div>
-      {% endif %}
+      {% endif %} -->
+
+      {% if title == "Analytics-New" %}
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="editor" href="#">Editor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="appearance" href="#">Appearance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="analytics" href="/analytics">Analytics</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {% else %}
       <span>{{ title }}</span>
+      {% endif %}
       {% if title == "Existing Tags" %}
-      <button
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#createTagModal"
-      >
+      <button type="button" data-bs-toggle="modal" data-bs-target="#createTagModal">
         Create New
       </button>
       {% endif %}
@@ -20,11 +39,7 @@
         <i class="bi bi-list"></i>
       </button>
       <div class="btn-group profile-item-dropdown">
-        <div
-          class="dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
+        <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           <div class="icon">
             <img src="../images/logos_youtube-icon.png" alt="" />
           </div>
@@ -66,4 +81,9 @@
   function goBack() {
     window.history.back();
   }
+</script>
+<script>
+  const path = window.location.pathname
+  const activePathName = path.split('/');
+  document.getElementById(activePathName[1]).classList.add('active')
 </script>
