@@ -19,6 +19,18 @@
 
     <link rel="stylesheet" type="text/css" href="./css/topbar.css" />
 
+    <link rel="stylesheet" type="text/css" href="./css/dashboard.css" />
+
+    <!-- perfect-scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/perfect-scrollbar.js"
+        integrity="sha512-EXRb/1mTZs4VEgPqlabQWHw2hnGn269OM3QvLfLeEeEp7GznVGkbYdu+bU9bb/XLYda6drPfWCyoMm6RYwSZMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/css/perfect-scrollbar.css"
+        integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Chart-JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -42,14 +54,277 @@
         {% include 'topbar.html' %}
         <!-- Content -->
         <div class="main-content">
-            <div class="time">
-                test Dashboard
+            <div id="scroll-container" class="dashboard perfect-scrollbar">
+                <div class="profile-data mx">
+                    <div class="heading">
+                        <span>Profile Data Pipeline</span>
+                    </div>
+                    <div class="card data">
+                        <div class="text">
+                            <span>Data Status: OFF</span>
+                        </div>
+                        <div class="button">
+                            <button>Connect</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+
+                </div>
+
+                <div class="awareness">
+                    <div class="heading">
+                        <span>
+                            Awareness
+                        </span>
+                    </div>
+                    <div class="row data">
+                        <div class="col-sm-4">
+                            <!-- Column 1 content -->
+                            <div class="card impressions">
+                                <div class="card-head">
+                                    <div class="heading">
+                                        <span>
+                                            Impressions
+                                        </span>
+                                    </div>
+                                    <div class="data-tag">
+                                        <span>
+                                            10.258
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-main">
+                                    <canvas id="impressions"></canvas>
+                                </div>
+                                <div class="card-foot">
+                                    <div class="section-1">
+                                        <div class="heading">
+                                            <span>Med. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                    <div class="section-2">
+                                        <div class="heading">
+                                            <span>Avg. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- Column 2 content -->
+                            <div class="card reach">
+                                <div class="card-head">
+                                    <div class="heading">
+                                        <span>
+                                            Reach
+                                        </span>
+                                    </div>
+                                    <div class="data-tag">
+                                        <span>
+                                            10.258
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-main">
+                                    <canvas id="reach"></canvas>
+                                </div>
+                                <div class="card-foot">
+                                    <div class="section-1">
+                                        <div class="heading">
+                                            <span>Med. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                    <div class="section-2">
+                                        <div class="heading">
+                                            <span>Avg. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- Column 3 content -->
+                            <div class="card plays">
+                                <div class="card-head">
+                                    <div class="heading">
+                                        <span>
+                                            Plays
+                                        </span>
+                                    </div>
+                                    <div class="data-tag">
+                                        <span>
+                                            10.258
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-main">
+                                    <canvas id="plays"></canvas>
+                                </div>
+                                <div class="card-foot">
+                                    <div class="section-1">
+                                        <div class="heading">
+                                            <span>Med. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                    <div class="section-2">
+                                        <div class="heading">
+                                            <span>Avg. Val</span>
+                                        </div>
+                                        <div class="text">
+                                            <span>10.258</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/main.js"></script>
+    <script src="./js/perfect-scrollbar.js"></script>
+    <script>
+        // Sample data for the line chart
+        var chartData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+            datasets: [{
+                label: 'Sample Data',
+                data: [10, 20, 15, 25, 30, 22],
+                borderColor: '#D458FF',
+                tension: 0.4, // Increased tension for a more curved line
+                backgroundColor: '#D458FF',
+                borderWidth: 2,
+                pointRadius: 5,
+                pointBackgroundColor: '#D458FF',
+            }]
+        };
 
+        // Get the canvas element and create the chart
+        var impressions = new Chart(document.getElementById('impressions').getContext('2d'), {
+            type: 'line',
+            data: chartData,
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        },
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            display: true,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        }
+                    }
+                }
+            }
+        });
+
+        var reach = new Chart(document.getElementById('reach').getContext('2d'), {
+            type: 'line',
+            data: chartData,
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        },
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            display: true,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        }
+                    }
+                }
+            }
+        });
+
+        var plays = new Chart(document.getElementById('plays').getContext('2d'), {
+            type: 'line',
+            data: chartData,
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        },
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            display: true,
+                            lineWidth: 3,
+                            color: 'rgb(226, 220, 236)',
+                            drawTicks: true,
+                            drawBorder: true,
+                        },
+                        border: {
+                            dash: [6, 4],
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

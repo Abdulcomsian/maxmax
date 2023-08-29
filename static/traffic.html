@@ -218,8 +218,7 @@
                         lineTension: 0.4,
                         fill: false,
                         data: [50, 40, 30, 35, 45, 55, 50, 45, 40, 45, 50, 60],
-                        yAxisID: 'right-y-axis'
-                    }
+                    },
                 ]
             },
             options: {
@@ -255,7 +254,7 @@
                         beginAtZero: true,
                         ticks: {
                             callback: function (value) {
-                                return value + '%'; // Display percentage symbol
+                                return (value * 100) + '%'; // Display percentage symbol
                             },
                         },
                         grid: {

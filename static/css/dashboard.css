@@ -1,0 +1,247 @@
+.dashboard {
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    position: relative;
+}
+
+.dashboard>.profile-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    margin-bottom: 1%;
+}
+
+.dashboard>.profile-data>.heading {
+    padding-left: 2%;
+}
+
+.dashboard>.profile-data>.heading>span {
+    color: #150337;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.profile-data>.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(10px);
+
+    padding: 1%;
+}
+
+.dashboard>.profile-data>.data>.text>span {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.profile-data>.data>.button>button {
+    width: 161px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 15px;
+    background: linear-gradient(131deg, #A77DFC 0%, #5E17EB 100%);
+
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.awareness>.heading {
+    margin-bottom: 0.5%;
+
+    padding-left: 2%;
+}
+
+.dashboard>.awareness>.heading>span {
+    color: #150337;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions,
+.dashboard>.awareness>.data>.col-sm-4>.reach,
+.dashboard>.awareness>.data>.col-sm-4>.plays {
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(10px);
+
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-head,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-head,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 0%;
+    padding-top: 3%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+
+    border-bottom: 2px solid #DBCBF9;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-head>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-head>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-head>.heading>span {
+    color: #150337;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-head>.data-tag,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-head>.data-tag,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-head>.data-tag {
+    width: 92px;
+    height: 39px;
+
+    border-radius: 10px;
+    border: 1px solid #DFD9EF;
+    background: #F3F3F3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-head>.data-tag>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-head>.data-tag>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-head>.data-tag>span {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-main,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-main,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-main {
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(10px);
+
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-1,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-1,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-1 {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-2,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-2,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-2 {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-1>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-1>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-1>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-2>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-2>.heading>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-2>.heading>span {
+    color: #150337;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-1>.text,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-1>.text,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-1>.text,
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-2>.text,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-2>.text,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-2>.text {
+    width: 80px;
+    height: 39px;
+    border-radius: 10px;
+    border: 1px solid #DFD9EF;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-1>.text>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-1>.text>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-1>.text>span,
+.dashboard>.awareness>.data>.col-sm-4>.impressions>.card-foot>.section-2>.text>span,
+.dashboard>.awareness>.data>.col-sm-4>.reach>.card-foot>.section-2>.text>span,
+.dashboard>.awareness>.data>.col-sm-4>.plays>.card-foot>.section-2>.text>span {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
