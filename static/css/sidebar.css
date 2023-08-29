@@ -26,11 +26,11 @@
   height: 10%;
 }
 
-.sidebar > .logo > .div-left {
+.sidebar>.logo>.div-left {
   width: 70%;
 }
 
-.sidebar > .logo > .div-right {
+.sidebar>.logo>.div-right {
   width: 2rem;
   height: 2rem;
   border-radius: 0.625rem;
@@ -136,7 +136,7 @@
   background-size: inherit;
 }
 
-.sidebar .brand-item .icon-text .text > span {
+.sidebar .brand-item .icon-text .text>span {
   color: #150337;
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
@@ -159,11 +159,15 @@
   flex-grow: 1;
 }
 
-.sidebar > .profile-item-dropdown {
+.center>.dashboard-item {
+  text-decoration: none;
+}
+
+.sidebar>.profile-item-dropdown {
   display: none;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-toggle {
+.sidebar>.profile-item-dropdown>.dropdown-toggle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -176,11 +180,11 @@
   padding: 8%;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-toggle::after {
+.sidebar>.profile-item-dropdown>.dropdown-toggle::after {
   content: none;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-toggle > .icon-text > .icon {
+.sidebar>.profile-item-dropdown>.dropdown-toggle>.icon-text>.icon {
   border-radius: 3.75rem;
   background: #fff;
 
@@ -192,23 +196,18 @@
   align-items: center;
 }
 
-.sidebar
-  > .profile-item-dropdown
-  > .dropdown-toggle
-  > .icon-text
-  > .icon
-  > img {
+.sidebar>.profile-item-dropdown>.dropdown-toggle>.icon-text>.icon>img {
   max-width: 20px;
   max-height: 20px;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-toggle > .icon-text {
+.sidebar>.profile-item-dropdown>.dropdown-toggle>.icon-text {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-toggle > .icon-text > .text > span {
+.sidebar>.profile-item-dropdown>.dropdown-toggle>.icon-text>.text>span {
   color: #150337;
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
@@ -218,7 +217,7 @@
   text-transform: capitalize;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-menu {
+.sidebar>.profile-item-dropdown>.dropdown-menu {
   border-radius: 0.625rem;
   border: 1px solid #dfd9ef;
   background: #fff;
@@ -228,7 +227,7 @@
   padding: 2%;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-menu > .dropdown-item {
+.sidebar>.profile-item-dropdown>.dropdown-menu>.dropdown-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -237,7 +236,7 @@
   border-bottom: 1px solid #621dec52;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-menu > .dropdown-item > .icon {
+.sidebar>.profile-item-dropdown>.dropdown-menu>.dropdown-item>.icon {
   width: 2rem;
   height: 2rem;
 
@@ -251,22 +250,12 @@
   align-items: center;
 }
 
-.sidebar
-  > .profile-item-dropdown
-  > .dropdown-menu
-  > .dropdown-item
-  > .icon
-  > img {
+.sidebar>.profile-item-dropdown>.dropdown-menu>.dropdown-item>.icon>img {
   width: 1.25rem;
   height: 0.875rem;
 }
 
-.sidebar
-  > .profile-item-dropdown
-  > .dropdown-menu
-  > .dropdown-item
-  > .text
-  > span {
+.sidebar>.profile-item-dropdown>.dropdown-menu>.dropdown-item>.text>span {
   color: #150337;
   font-size: 0.9375rem;
   font-family: "Poppins", sans-serif;
@@ -276,7 +265,7 @@
   text-transform: capitalize;
 }
 
-.sidebar > .profile-item-dropdown > .dropdown-menu > .new-dropdown-item {
+.sidebar>.profile-item-dropdown>.dropdown-menu>.new-dropdown-item {
   color: #601aec;
   font-size: 0.9375rem;
   font-family: "Poppins", sans-serif;
@@ -304,12 +293,12 @@
   cursor: pointer;
 }
 
-.sidebar .submenu .sub-menu-item .item > div {
+.sidebar .submenu .sub-menu-item .item>div {
   border-left: 1px solid #621dec52;
   padding: 2% 2% 2% 7%;
 }
 
-.sidebar .submenu .sub-menu-item .item > div span {
+.sidebar .submenu .sub-menu-item .item>div span {
   color: #601aec;
   font-size: 0.9375rem;
   font-family: "Poppins", sans-serif;
@@ -324,11 +313,11 @@
   border-radius: 0.9375rem;
 }
 
-.sidebar .submenu .active-item .item > div {
+.sidebar .submenu .active-item .item>div {
   border-left: 1px solid #fff;
 }
 
-.sidebar .submenu .active-item .item > div > span {
+.sidebar .submenu .active-item .item>div>span {
   color: #fff;
   font-size: 0.9375rem;
   font-family: "Poppins", sans-serif;
@@ -366,11 +355,11 @@
     box-shadow: 3px 0 20px 0 rgba(0, 0, 0, 0.51);
   }
 
-  .sidebar > .profile-item-dropdown {
+  .sidebar>.profile-item-dropdown {
     display: block;
   }
 
-  .sidebar > .logo > .div-right {
+  .sidebar>.logo>.div-right {
     display: block;
   }
 
@@ -394,7 +383,7 @@
     padding: 4% !important;
   }
 
-  .sidebar > .profile-item-dropdown > .dropdown-toggle {
+  .sidebar>.profile-item-dropdown>.dropdown-toggle {
     padding: 4%;
   }
 }
@@ -410,11 +399,11 @@
 }
 
 @media (max-width: 520px) {
-  .sidebar .brand-item .icon-text .text > span {
+  .sidebar .brand-item .icon-text .text>span {
     font-size: 14px !important;
   }
 
-  .sidebar > .profile-item-dropdown > .dropdown-toggle > .icon-text > .text > span {
+  .sidebar>.profile-item-dropdown>.dropdown-toggle>.icon-text>.text>span {
     font-size: 14px !important;
   }
 

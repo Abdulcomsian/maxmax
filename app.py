@@ -85,5 +85,15 @@ def analytics():
     return render_template('analytics.html', title="Analytics-New")
 
 
+@app.route('/traffic')
+def traffic():
+    return render_template('traffic.html', title="Traffic")
+
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html', title="Dashboard")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
