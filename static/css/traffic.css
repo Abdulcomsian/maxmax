@@ -1,0 +1,253 @@
+.traffic {
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    position: relative;
+}
+
+.traffic>.card-dates {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #DFD9EF;
+    background: #FFF;
+
+    flex-direction: row;
+}
+
+.traffic>.card-dates>.leftside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 50%;
+}
+
+.traffic>.card-dates>.leftside>.text>span {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.traffic>.card-dates>.rightside {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.traffic>.card-dates>.rightside>.text>span {
+    color: #818181;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+.traffic>.activity-conversions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.traffic>.activity-conversions>.activity {
+    width: 50%;
+}
+
+.traffic>.activity-conversions>.conversions {
+    width: 50%;
+}
+
+.traffic>.activity-conversions>.activity>.heading,
+.traffic>.activity-conversions>.conversions>.heading {
+    padding-left: 3%;
+    padding-right: 3%;
+
+    margin-bottom: 1%;
+}
+
+.traffic>.activity-conversions>.activity>.heading>span,
+.traffic>.activity-conversions>.conversions>.heading>span {
+    color: #150337;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.traffic>.activity-conversions>.activity>.data,
+.traffic>.activity-conversions>.conversions>.data {
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(10px);
+
+    padding: 3%;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1 {
+    border-bottom: 2px solid #DBCBF9;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1,
+.traffic>.activity-conversions>.activity>.data>.row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1,
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2 {
+    width: 50%;
+
+    padding-left: 15%;
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1 {
+    border-right: 2px solid #DBCBF9;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.heading,
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.heading,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.heading,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.heading>.icon {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #ECE1FC;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.heading>.icon {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(131deg, #A77DFC 0%, #5E17EB 100%);
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.heading>.icon {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #ECE1FC;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.heading>.icon {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #D458FF;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.heading>.text>span,
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.heading>.text>span,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.heading>.text>span,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.heading>.text>span {
+    color: #818181;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.24px;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.data,
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.data,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.data,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.data {
+    padding-left: 8%;
+}
+
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.data>span,
+.traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.data>span,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.data>span,
+.traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.data>span {
+    color: #150337;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.24px;
+}
+
+.traffic>.activity-conversions>.conversions>.data>.row-1,
+.traffic>.activity-conversions>.conversions>.data>.row-2 {
+    padding-left: 20%;
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+
+.traffic>.activity-conversions>.conversions>.data>.row-1 {
+    border-bottom: 2px solid #DBCBF9;
+}
+
+.traffic>.activity-conversions>.conversions>.data>.row-1>.heading>.text>span,
+.traffic>.activity-conversions>.conversions>.data>.row-2>.heading>.text>span {
+    color: #818181;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.24px;
+}
+
+.traffic>.activity-conversions>.conversions>.data>.row-1>.data>span,
+.traffic>.activity-conversions>.conversions>.data>.row-2>.data>span {
+    color: #150337;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.24px;
+}
+
+.traffic>.chart {
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(10px);
+
+    padding: 2%;
+}
