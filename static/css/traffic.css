@@ -251,3 +251,80 @@
 
     padding: 2%;
 }
+
+@media(max-width: 690px) {
+
+    .traffic>.card-dates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .traffic>.card-dates>.leftside {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .traffic>.card-dates>.rightside {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .traffic>.activity-conversions {
+        flex-direction: column;
+    }
+
+    .traffic>.activity-conversions>.activity,
+    .traffic>.activity-conversions>.conversions {
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .traffic>.card-dates>.leftside>.text>span {
+        font-size: 14px;
+    }
+
+    .traffic>.card-dates>.rightside>.text>span {
+        font-size: 11px;
+    }
+
+    .traffic>.activity-conversions>.activity>.heading>span,
+    .traffic>.activity-conversions>.conversions>.heading>span {
+        font-size: 22px;
+    }
+
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-1,
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-2,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-1,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-2 {
+        padding-left: 6%;
+        padding-right: 0%;
+    }
+
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.heading>.text>span,
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.heading>.text>span,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.heading>.text>span,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.heading>.text>span {
+        font-size: 13px;
+    }
+
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-1>.data>span,
+    .traffic>.activity-conversions>.activity>.data>.row-1>.section-2>.data>span,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-1>.data>span,
+    .traffic>.activity-conversions>.activity>.data>.row-2>.section-2>.data>span {
+        font-size: 20px;
+    }
+
+    .traffic>.activity-conversions>.conversions>.data>.row-1>.heading>.text>span,
+    .traffic>.activity-conversions>.conversions>.data>.row-2>.heading>.text>span {
+        font-size: 13px;
+    }
+
+    .traffic>.activity-conversions>.conversions>.data>.row-1>.data>span,
+    .traffic>.activity-conversions>.conversions>.data>.row-2>.data>span {
+        font-size: 20px;
+    }
+}

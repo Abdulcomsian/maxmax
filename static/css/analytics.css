@@ -319,6 +319,8 @@
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+
+  white-space: nowrap;
 }
 
 .analytics>.tables>.table-2>.card>.card-body>.nav {
@@ -428,4 +430,119 @@
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+}
+
+@media(max-width: 690px) {
+
+  .analytics>.card-dates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .analytics>.card-dates>.leftside {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .analytics>.card-dates>.rightside {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .analytics>.activity>.activity-card {
+    flex-direction: column;
+  }
+
+  .analytics>.activity>.activity-card>.section-1,
+  .analytics>.activity>.activity-card>.section-2,
+  .analytics>.activity>.activity-card>.section-3,
+  .analytics>.activity>.activity-card>.section-4 {
+    width: 100%;
+
+    padding: 1%;
+
+    justify-content: center;
+  }
+
+  .analytics>.tables {
+    flex-direction: column;
+  }
+
+  .analytics>.tables>.table-1,
+  .analytics>.tables>.table-2 {
+    width: 100%;
+  }
+}
+
+
+@media(max-width: 425px) {
+
+  .analytics>.card-dates>.leftside>.text>span {
+    font-size: 14px;
+  }
+
+  .analytics>.card-dates>.rightside>.text>span {
+    font-size: 11px;
+  }
+
+  .analytics>.activity>.heading>span {
+    font-size: 20px;
+  }
+
+  .analytics>.activity>.activity-card>.section-1>.heading>.text>span,
+  .analytics>.activity>.activity-card>.section-2>.heading>.text>span,
+  .analytics>.activity>.activity-card>.section-3>.heading>.text>span,
+  .analytics>.activity>.activity-card>.section-4>.heading>.text>span {
+    font-size: 13px;
+  }
+
+  .analytics>.activity>.activity-card>.section-1>.text>span,
+  .analytics>.activity>.activity-card>.section-2>.text>span,
+  .analytics>.activity>.activity-card>.section-3>.text>span,
+  .analytics>.activity>.activity-card>.section-4>.text>span {
+    font-size: 20px;
+  }
+
+  .analytics>.tables>.table-1>.card>.card-header>.text>span,
+  .analytics>.tables>.table-2>.card>.card-header>.text>span {
+    font-size: 15px;
+  }
+
+  .analytics>.tables>.table-1>.card>.card-body>.table-data>.card>.name>span {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-1>.card>.card-body>.table-data>.card>.clicks>span {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.nav-tabs>.nav-item>.nav-link {
+    font-size: 13px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.nav-tabs>.nav-item>.nav-link.active {
+    font-size: 13px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.tab-content>.tab-pane>.cards>.card>.text>span {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.tab-content>.tab-pane>.cards>.card>.stats>.views>.text-1 {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.tab-content>.tab-pane>.cards>.card>.stats>.views>.text-2 {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.tab-content>.tab-pane>.cards>.card>.stats>.clicks>.text-1 {
+    font-size: 12px;
+  }
+
+  .analytics>.tables>.table-2>.card>.card-body>.tab-content>.tab-pane>.cards>.card>.stats>.clicks>.text-2 {
+    font-size: 12px;
+  }
 }
